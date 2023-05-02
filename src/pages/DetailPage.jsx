@@ -20,7 +20,7 @@ export default function DetailPage() {
           <div id='default-carousel' className='relative xl:w-1/2 w-full h-[500px] object-cover object-center rounded' data-carousel='slide'>
             <Carousel images={images} />
           </div>
-          <div className='xl:w-1/2 w-full xl:pl-10 lg:py-6 mt-6 xl:mt-0'>
+          <div className='xl:h-[80vh] overflow-auto xl:w-1/2 w-full xl:pl-10 lg:py-6 mt-6 xl:mt-0'>
             <h2 className='text-sm title-font text-gray-500 tracking-widest'>
               {data.developer} - <span>Release Date: {data.release_date}</span>
             </h2>
