@@ -14,8 +14,8 @@ export default function DetailPage() {
   }
 
   return (
-    <section className='body-font overflow-hidden dark:text-white'>
-      <div className='py-24 w-[100%]'>
+    <section className='body-font xl:h-[90vh] overflow-hidden dark:text-white'>
+      <div className='py-16 w-[100%]'>
         <div className='xl:w-4/5 xl:mx-auto mx-14 flex flex-wrap'>
           <div id='default-carousel' className='relative xl:w-1/2 w-full h-[500px] object-cover object-center rounded' data-carousel='slide'>
             <Carousel images={images} />

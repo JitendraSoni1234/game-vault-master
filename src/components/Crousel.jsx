@@ -1,16 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 export default function Carousel({ images }) {
   const [activeIndex, setActiveIndex] = useState(0);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setActiveIndex(prevIndex => (prevIndex + 1) % images.length);
-    }, 5000);
-
-    return () => clearInterval(intervalId);
-  }, [images.length]);
-  
   return (
     <div className='relative h-full'>
       <img src={images?.[activeIndex]} alt='screenshot' className='shadow-lg w-full h-full object-cover rounded-3xl' />
