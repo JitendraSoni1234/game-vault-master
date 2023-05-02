@@ -1,5 +1,5 @@
 function FilterComponent() {
-  return <div>FilterComponent</div>;
+  return <div className="p-5 text-center text-xl">filter feature comming soon...</div>;
 }
 
 export default FilterComponent;

@@ -11,14 +11,16 @@ export const gameApi = createApi({
   }),
   endpoints: builder => ({
     getAllGamesList: builder.query({
-      query: () => 'games',
+      query: () => ({
+        url: 'games',
+      }),
     }),
     getGameDetail: builder.query({
-      query: (id) => ({
+      query: id => ({
         url: 'game',
         params: {
           id,
-        }
+        },
       }),
     }),
   }),

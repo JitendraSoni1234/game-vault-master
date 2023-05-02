@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 function Card({ id, title, thumbnail, short_description, publisher, release_date }) {
   return (
-    <Link to={`/${id}`} className='p-4 xl:w-1/4 lg:w-1/2 w-full shadow-lg dark:bg-gray-900 bg-white lg:hover:scale-110 transition ease-in-out rounded-lg duration-700'>
+    <Link to={`/${id}`} className='p-4 xl:w-1/4 lg:w-1/2 w-full shadow-lg dark:bg-gray-900 bg-white lg:hover:scale-105 transition ease-in-out rounded-lg duration-700'>
       <div className='h-full flex flex-col items-center text-center'>
         <div className='relative mb-4 w-full'>
           <img alt='team' className='flex-shrink-0 rounded-lg w-full h-56 object-cover object-center' src={thumbnail} />
