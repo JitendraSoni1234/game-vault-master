@@ -5,8 +5,8 @@ export const gameApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: 'https://free-to-play-games-database.p.rapidapi.com/api/',
     prepareHeaders: header => {
-      header.set('X-RapidAPI-Key', '1ab1db475emsh3c77522d90de389p19253bjsn8c8eb735a1e9');
-      header.set('X-RapidAPI-Host', 'free-to-play-games-database.p.rapidapi.com');
+      header.set('X-RapidAPI-Key', import.meta.env.VITE_RAPID_API_KEY);
+      header.set('X-RapidAPI-Host', import.meta.env.VITE_RAPID_API_HOST);
     },
   }),
   endpoints: builder => ({

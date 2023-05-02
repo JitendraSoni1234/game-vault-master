@@ -7,7 +7,7 @@ function HomePage() {
     return <Loading />;
   }
   return (
-    <section className='flex flex-wrap dark:bg-gray-800 bg-white gap-10 pt-10 justify-center'>
+    <section className='flex flex-wrap dark:bg-gray-800 bg-white gap-10 pt-10 px-10 justify-center'>
       {data?.map(game => (
         <Cards key={game.id} {...game} />
       ))}

@@ -36,7 +36,7 @@ function Header() {
                 <span className='text-[14px] md:text-[17px]'>Filter</span>
               </button>
             ) : null}
-            <button className='flex items-center gap-[10px]' onClick={darkModeHandler}>
+            <button className='flex items-center gap-[10px] focus:outline-none' onClick={darkModeHandler}>
               <Moon dark={dark} className='w-[20px] h-[20px]' />
               <span className='text-[14px] md:text-[17px]'>{dark ? 'Light' : 'Dark'} Mode</span>
             </button>
