@@ -1,9 +1,10 @@
 import Cards from '../components/Card';
 import { useGetAllGamesListQuery } from '../apiSlice/api';
+import Loading from '../components/Loading';
 function HomePage() {
   const { data, isLoading } = useGetAllGamesListQuery();
   if (isLoading) {
-    return 'loading...';
+    return <Loading />;
   }
   return (
     <section className='flex flex-wrap dark:bg-gray-800 bg-white gap-10 pt-10 justify-center'>

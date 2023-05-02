@@ -14,7 +14,7 @@ function App() {
           element: <HomePage />,
         },
         {
-          path: '/:id',
+           path: '/:id',
           element: <DetailPage />,
         },
       ],
