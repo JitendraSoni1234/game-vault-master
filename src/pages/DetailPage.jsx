@@ -17,10 +17,10 @@ export default function DetailPage() {
     <section className='body-font xl:h-[90vh] overflow-hidden dark:text-white'>
       <div className='py-16 w-[100%]'>
         <div className='xl:w-4/5 xl:mx-auto mx-14 flex flex-wrap'>
-          <div id='default-carousel' className='relative xl:w-1/2 w-full h-[500px] object-cover object-center rounded' data-carousel='slide'>
+          <div id='default-carousel' className='relative xl:w-1/2 w-full h-[500px] object-cover object-center rounded animate-[wiggle_0.5s_ease-in-out]' data-carousel='slide'>
             <Carousel images={images} />
           </div>
-          <div className='xl:h-[80vh] overflow-auto xl:w-1/2 w-full xl:pl-10 lg:py-6 mt-6 xl:mt-0'>
+          <div className='xl:h-[80vh] overflow-auto xl:w-1/2 w-full xl:pl-10 lg:py-6 mt-6 xl:mt-0 animate-[wiggle-one_0.5s_ease-in-out]'>
             <h2 className='text-sm title-font text-gray-500 tracking-widest'>
               {data.developer} - <span>Release Date: {data.release_date}</span>
             </h2>
